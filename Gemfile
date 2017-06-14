@@ -21,9 +21,6 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-
-
-
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -47,6 +44,12 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
   gem 'sqlite3'
+    gem 'materialize-sass'
+  gem 'jquery-turbolinks'
+  gem 'jquery'
+  gem 'jquery-rails'
+  gem 'turbolinks', '~> 5'
+  gem 'material_icons'
 end
 
 group :development do
