@@ -1,0 +1,46 @@
+<div class="section">
+	<div class="container">
+		<div class="row">
+			<%= form_for :post do |f| %>
+				<div class="input-field col s12">
+		         <!--  <input id="last_name" type="text" class="validate">
+		          <label for="last_name">Last Name</label> -->
+		         
+					<%= f.label :title %>
+					<%= f.text_field :title %>		
+		          
+		        </div>
+		        <div class="input-field col s12">
+			        <%= f.label :body %>
+					<%= f.text_area :body, class: 'materialize-textarea' %>	
+				</div>
+				<div class="input-field col s12 ">
+		           <%= f.submit class: 'btn orange' %>
+		        </div>
+			<% end %>	
+			<%= form_tag("", method: "post") do %>
+				<div class="input-field col s12">
+					<%= label_tag(:search, "Search for:") %>
+					<%= text_area_tag(:message, "Hi, nice site", class: 'materialize-textarea') %>
+				</div>
+				<div class="input-field col s12">
+					<label for="user_date">Born Date</label>
+					<%= date_field(:user, "date", class: 'datepicker') %>
+				</div>
+				<div class="input-field col s12">
+					<%= submit_tag :search, class: 'btn orange' %>
+
+				</div>
+			<% end %>
+			<br>
+        </div>
+	</div>
+</div>
+<div class="section white">
+	<div class="container">
+		<p class="center">Title is <%= @data %></p>
+		<%= link_to(raw("Component"), component_path, :class => "btn orange") %>
+		<%= link_to "Goodbye", index_component_path %>!
+		<%= link_to(raw("javascript" +("<b class= 'caret'></b>")), javascript_path, :class => "btn", :data => {:toggle=>"dropdown"}) %>
+	</div>
+</div>
