@@ -15,23 +15,23 @@ gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 #Use materialize
-gem 'materialize-sass'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-gem 'jquery-turbolinks'
-gem 'jquery'
 
-gem 'jquery-rails'
+
+
+
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 
-gem 'material_icons'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -61,6 +61,12 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
+  gem 'materialize-sass'
+  gem 'jquery-turbolinks'
+  gem 'jquery'
+  gem 'jquery-rails'
+  gem 'turbolinks', '~> 5'
+  gem 'material_icons'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
